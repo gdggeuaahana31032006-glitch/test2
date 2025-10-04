@@ -1,0 +1,555 @@
+*{
+    padding: 0px;
+    margin:0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #0a0a0a;
+}
+.head {
+    position: relative; /* Important for video positioning */
+    width: 100%;
+    height: 100vh; /* Full screen height, adjust if needed */
+    overflow: hidden; /* Video stays within container */
+    
+}
+
+/* Video fills the container */
+.bg-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 300%;
+    object-fit: cover; /* Ensures video covers whole area */
+    transform: translate(-50%, -50%);
+    z-index: 1; /* Behind content */
+    
+}
+.netflix {
+    position: relative;
+    z-index: 2; /* Above the video */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px; /* Adjust as needed */
+    color: white;
+    margin-top: 20px;
+}
+
+/* Optional: style for logo */
+.images {
+    width: 200px; /* Adjust size */
+    height: auto;
+}
+
+
+.lang
+{
+    height: 40px;
+    width:100px;
+    padding:5px;
+    font-size: 20px;
+    background-color: black;
+    color:white;
+    margin-top: 20px;
+}
+.sign{
+
+     height: 40px;
+    width:100px;
+    padding:5px;
+    font-size: 20px;
+     background-color: #e50914;
+    color:white;
+    margin-top: 20px;
+}
+
+
+.movies {
+    position: absolute; /* Allows centering over the video */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centers the element */
+    z-index: 2; 
+    color: white;
+    text-align: center;
+    width: 80%; /* Max width for content */
+    max-width: 950px;
+    padding-top: 50px; 
+}
+
+/* Styling for the main heading */
+.mov {
+    font-size: 3.5rem; /* Large font size for the main heading */
+    font-weight: 900;
+    line-height: 1.1;
+    margin-bottom: 20px;
+    color:#ffffff
+}
+
+/* New: Styling for the subtitle */
+.subtitle {
+    font-size: 1.6rem;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+/* New: Styling for the call-to-action text */
+.cta-text {
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+/* New: Styling for the email signup form */
+.email-signup {
+    display: flex;
+    justify-content: center;
+    gap: 8px; /* Space between input and button */
+    padding: 0 10%; /* Center the form better on large screens */
+}
+
+.email-input {
+    min-width: 450px; 
+    height: 55px;
+    padding: 10px 10px 0;
+    font-size: 1.5rem;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent dark background */
+    border: 1px solid #777;
+    border-radius: 5px;
+}
+
+.get-started-btn {
+    height: 55px;
+    width: 180px;
+    background-color: #e50914; /* Netflix Red */
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 700;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.get-started-btn:hover {
+    background-color: #f40612; /* Slightly darker red on hover */
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .email-signup {
+        flex-direction: column; /* Stacks the input and button */
+        align-items: center;
+        padding: 0 5%;
+    }
+
+    .email-input {
+        width: 100%;
+        max-width:90%;
+        margin-bottom: 10px;
+    }
+    .get-started-btn{
+        width: 50%;
+        font-size: 1.2rem;
+    }
+}
+
+
+
+.now{
+    color: rgb(255, 255, 255);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-left: 30px;
+
+
+}
+
+
+.images1{
+
+    height:300px;
+}
+
+ .movie{
+    display: flex;
+    align-items: flex-start;
+    overflow-x:scroll;
+    width:100%;
+    margin:0 auto;
+    padding:30px 0;
+    box-sizing: border-box;
+    gap:30px;
+    margin-left: 50px;
+    
+    
+    
+} 
+.card{
+    
+    border: 0.1rem solid,rgb(239, 232, 232);
+   background-color:rgb(239, 232, 232) ;
+   text-align: center;
+   margin-left:1rem;
+   border-radius: 10px;
+  
+  transition: transform 0.6s ease, box-shadow 0.6s ease;
+  cursor: pointer;
+
+
+ transform:scale(1.1);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.3);  
+
+  transition: transform 3s ease, box-shadow 5s ease;
+  transform-style: preserve-3d;
+}
+
+
+.card:hover {
+  transform: scale(1.15); 
+  transform: scale(1.1) rotateX(360deg) rotateY(360deg);
+  box-shadow: 0 25px 50px rgba(0,0,0,0.6);
+}
+
+
+.card > h3{
+    font-size: 30px;
+}
+.card>h2{
+    font-size: 15px;
+} 
+.sexy{
+    background-image: url(./305516208e12882e15eda9acbe4d40c1.jpg);
+}
+
+.join{
+    padding-top: 45px;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-left:110px;
+    margin-bottom:20px;
+}
+
+
+.more{
+    display:flex;
+    margin-left:95px;
+    gap:20px;
+   
+
+}
+
+.card1{
+    border: 0.1rem solid,rgb(239, 232, 232);
+    height:250;
+    width:300px;
+   margin-left:1rem;
+   border-radius: 20px;
+   transition: transform 0.6s ease, box-shadow 0.6s ease;
+  cursor: pointer;
+  background: linear-gradient(135deg, #1a1c3a, #1b0f18, #130a16);
+  overflow: hidden;
+
+   
+}
+@media (max-width: 768px) {
+    /* Cards ko uper-niche stack karo */
+    .more {
+        flex-direction: column; 
+        margin: 0 20px; /* Margins bhi kam kar diye */
+        gap: 15px;
+    }
+    
+    /* Har card ko poori width do */
+    .card1 {
+        width: 100%; 
+        margin-left: 0;
+    }
+}
+
+.card1:hover {
+  transform: scale(1.15); 
+}
+.tv{
+    color: #fff;
+    font-family: 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+    font-weight: 700; 
+    font-size: 30px;
+    padding:20px;
+}
+.card1>h1{
+    color: rgb(201, 194, 194);
+    font-size: 20px;
+    padding:20px;
+    font-family: 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+}
+
+
+
+@media (max-width: 768px) {
+    
+    /* Main Headings chote karo */
+    .mov {
+        font-size: 2.5rem; /* Pehle 3.5rem tha */
+    }
+    .subtitle {
+        font-size: 1.2rem; /* Pehle 1.6rem tha */
+    }
+    .now, .join {
+        font-size: 1.5rem; /* Section headings bhi chote */
+        margin-left: 20px; /* Margins bhi kam kar diye */
+    }
+    
+    /* Header padding kam karo */
+    .netflix {
+        padding: 10px 20px; /* Pehle 20px 50px tha */
+    }
+    .images {
+        width: 120px; /* Logo bhi thoda chota */
+    }
+    
+    /* Footer padding kam karo */
+    .watch, p {
+        padding: 0 20px; /* Side padding kam kar diya */
+    }
+}
+
+.back-button::before {
+    content: '\2039'; 
+    font-size: 2em;
+    font-weight: bold;
+    
+}
+
+/* 1. Wrapper for Relative Positioning */
+/* This container defines the boundary for the absolutely positioned buttons. */
+.movie-row-container {
+    position: relative; 
+    width: 100%;
+    overflow: hidden; /* Hide anything that spills out, but keep the internal .movie scroll */
+  
+}
+.back{
+    background-image: url(./1048efce851224e3b401a7ce9d00caed.jpg);
+}
+/* 2. Button Base Style */
+.nav-btn {
+    position: absolute;
+    top: 50%; /* Center vertically */
+    transform: translateY(-50%); /* Adjust for true vertical centering */
+    z-index: 5; /* Ensure buttons are above movie cards */
+    
+    /* Appearance styles */
+    height: 150px; /* Adjust height to match the look in your image */
+    width: 50px;
+    background-color: rgba(82, 79, 79, 0.5); /* Semi-transparent black background */
+    color: white;
+    font-size: 2.5rem; /* Large size for the chevron symbol */
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    /* To create the rounded edges like the image */
+    border-radius: 4px;
+    outline: none; 
+}
+
+.nav-btn:hover {
+    background-color: rgba(0, 0, 0, 0.7); /* Darker on hover */
+}
+
+/* 3. Specific Button Positioning */
+.left-btn {
+    left:5;
+    border-top-right-radius: 0; 
+    border-bottom-right-radius: 0; 
+}
+
+.right-btn {
+    right: 5;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+/* Optional: Adjust the 'now' heading margin if needed */
+.now {
+    color: rgb(255, 255, 255);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-left: 30px;
+    margin-top: 20px; /* Added slight top margin for spacing */
+}
+
+
+
+
+.watch1{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    margin-left: 20px;
+}
+.netfe{
+    
+    height: auto;
+    width:30px;
+}
+
+.pre{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 15px;
+    color: white;
+    font-weight: 100px;
+}
+p{
+    color: #ffffff;
+    margin-left: 30px;
+    margin-top:-10px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 100px;
+    margin-bottom: 50px;
+}
+
+
+
+
+.watch{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-top: 80px;
+    font-size: 15px;
+     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.go{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.signup{
+    margin-top: 20px;
+}
+.input{
+    min-width: 800px; 
+    height: 55px;
+    padding: 10px 10px 0;
+    font-size: 1.5rem;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent dark background */
+    border: 1px solid #777;
+    border-radius: 5px;
+    
+    
+}
+
+.buton{
+    margin-left: 15px;
+    margin-top: 20px;
+}
+.btn{
+    display: flex;
+    height: 55px;
+    width: 180px;
+    background-color: #e50914; /* Netflix Red */
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 700;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    padding-top: 15px;
+    padding-left: 15px;
+    
+}
+
+
+
+        .foot{
+            background-color: #000; /* Black background */
+            color: #757575; /* Grayish text color for non-links */
+            font-family: Arial, sans-serif;
+            margin-top: 30px;
+            padding: 20px;
+        }
+
+        /* Styling for the main footer section */
+        .netflix-footer {
+            max-width: 1000px;
+            margin: 0 auto; /* Center the content */
+            padding: 30px 0;
+        }
+
+        /* Phone Number Style */
+        .call-text {
+            margin-bottom: 20px;
+            font-size: 16px;
+        }
+        .call-text a {
+            color: #757575; /* Same color for the number */
+            text-decoration: none; /* Remove underline */
+        }
+        .call-text a:hover {
+            text-decoration: underline; /* Add underline on hover */
+        }
+
+        /* Link Columns Layout */
+        .links-container {
+            display: flex; /* Use Flexbox for column layout */
+            justify-content: space-between;
+            margin-bottom: 30px;
+            column-gap: 200px;
+            
+        }
+
+        /* Style for each link column */
+        .link-column {
+            flex-basis: 22%;
+             /* Makes columns roughly 22% wide each */
+             
+             
+        }
+
+        /* Style for the actual links */
+        .link-column a {
+            display: block; /* Makes each link a block for spacing */
+            color: #757575;
+            text-decoration: none;
+            margin-bottom: 15px; /* Spacing between links */
+            font-size: 14px;
+        }
+
+        .link-column a:hover {
+            text-decoration: underline;
+        }
+
+        /* Language Selector Style */
+        .language-selector {
+            margin-bottom: 20px;
+        }
+        .language-selector select {
+            background-color: #000;
+            color: #757575;
+            padding: 8px 12px;
+            border: 1px solid #757575;
+            font-size: 16px;
+            margin-bottom: 20px;
+            margin-left: -1px;
+        }
+
+        /* 'Netflix India' and Disclaimer text */
+        .country-text, .disclaimer-text {
+            font-size: 13px;
+            margin-bottom: 40px;
+            margin-left: -2px;
+        }
+        .disclaimer-text a {
+            color: #757575;
+            text-decoration: underline;
+            margin-top: 50px;
+        }
+
